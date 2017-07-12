@@ -1,0 +1,532 @@
+/*RESPONSIVO TABLETAS*/
+@media only screen and (max-width: 899px){
+	#configuracion{
+		display: none;
+	}
+
+	#tituloEncabezado{
+		display: none;
+	}
+
+	#buscadorChats{
+		display: none;
+	}
+
+	.informativa{
+		display: none;
+	}
+
+	#encabezadoContactos{
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 900px){
+	#flotanteIzquierdo{
+		width: 320px; 
+	}
+
+	#encabezadoContactos{
+		justify-content: space-between;
+	}
+}
+
+/*RESPONSIVO PARA TELÉFONOS*/
+@media only screen and (max-width: 630px){
+	#flotanteIzquierdo{
+		width: 100%; 
+	}
+
+	#configuracion{
+		display: block;
+	}
+
+	#tituloEncabezado{
+		display: block;
+	}
+
+	#buscadorChats{
+		display: block;
+	}
+
+	.informativa{
+		display: block;
+	}
+
+	#encabezadoContactos{
+		justify-content: space-between;
+	}
+}
+
+@media only screen and (min-width: 631px){
+	#flotanteIzquierdo{
+		border-right: 1px solid lightgray;
+	}
+}
+
+
+body{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#flotanteIzquierdo{
+	height: 100vh; 
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#encabezadoContactos{
+	padding: 0 10px;
+	width: 100%;
+	height: 60px;
+	background: white; 
+	border-bottom: 1px solid lightgray;	
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+#configuracion{
+	margin: 0; 
+	cursor: pointer;
+}
+
+#configuracion img{
+	width: 25px; 
+	height: 25px;
+	vertical-align: top;
+}
+
+#tituloEncabezado{
+	text-align: center;
+	font-family: GothamMedium; 
+	font-size: 17px;
+}
+
+#nuevoContacto{
+	cursor: pointer;
+	margin: 0; 
+}
+
+#nuevoContacto img{
+	width: 25px; 
+	height: 25px;
+	vertical-align: top;
+}
+
+#misContactos{
+	width: 100%;
+	flex-grow: 1;
+	flex-basis: 0;
+	overflow-y: scroll;
+}
+
+#buscadorChats input{
+	display: block;
+	margin: 10px auto;
+	width: 90%;
+	background: #f6f7f9;
+	font-family: GothamBook; 
+	font-size: 15px;
+	border: none;
+	outline: none;
+	border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	-ms-border-radius: 3px; 
+	padding: 7px;
+	padding-left: 33px;
+	text-align: center;
+	background-image: url('../../objetos/chat/busqueda.png');
+	background-repeat: no-repeat;
+	background-size: 13px;
+	background-position: 10px 9px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+#buscadorChats input:focus{
+	text-align: left;
+}
+
+/*CONTACTOS*/
+.contacto{
+	cursor: pointer;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contacto:hover{
+	background: #f6f7f9;
+}
+
+.contactoSeleccionado{
+	background: #f6f7f9 !important; 
+}
+
+.fotoContacto{
+	margin: 10px 10px;
+}
+
+.fotoContacto img{
+	width: 50px; 
+	height: 50px; 
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px; 
+	object-position: center; 
+	object-fit: cover;
+	vertical-align: top; 
+}
+
+.informativa{
+	flex-grow: 1;
+	margin-right: 10px;
+}
+
+.informativa p{
+	margin: 0;
+}
+
+.nombreFecha{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nombreContacto{
+	font-size: 16px; 
+	font-family: GothamBook;
+	color: black;
+}
+
+.fechaMensaje{
+	font-size: 13px; 
+	font-family: GothamBook;
+	color: #00D921;
+}
+
+.ultimoMensaje{
+	font-size: 14px; 
+	font-family: GothamLight;
+	color: #838383;
+}
+
+/*FLOTANTE DERECHO*/
+/*RESPONSIVO PARA TELÉFONOS*/
+@media only screen and (max-width: 630px){
+	#flotanteDerecho{
+		display: none;
+	}
+
+	.propio{
+		max-width: 80%;
+	}
+
+	.otro{
+		max-width: 80%;
+	}
+}
+
+
+@media only screen and (min-width: 631px){
+	#flotanteDerecho{
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.propio{
+		max-width: 50%;
+	}
+
+	.otro{
+		max-width: 50%;
+	}
+}
+
+#flotanteDerecho{
+	height: 100vh;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+#encabezadoChat{
+	height: 60px;
+	width: 100%; 
+	background: white; 
+	border-bottom: 1px solid lightgray;	
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+#regresar{
+	cursor: pointer;
+	width: 35px; 
+	height: 35px; 
+	margin: 0;
+	margin-left: 15px;
+	display: none;
+}
+
+#regresar img{
+	margin: 0;
+	width: 100%; 
+	height: 100%; 
+}
+
+#contenedor{
+	flex-grow: 1;
+	flex-basis: 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#blanco{
+	display: none;
+	width: 35px; 
+	height: 35px; 
+	margin: 0;
+	margin-left: 15px;
+}
+
+.nombreContactoSeleccionado{
+	margin: 0; 
+	font-family: GothamBook; 
+	font-size: 16px;
+	color: black;
+}
+
+.ultimaConexion{
+	margin: 0; 
+	font-family: GothamBook; 
+	font-size: 11px;
+	color: gray;
+	padding-top: 5px;
+}
+
+/*CONVERSACIÓN*/
+#mensajes{
+	flex-grow: 1;
+	flex-basis: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow-y: scroll;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.propio{
+	margin: 1px 10px; 
+	padding: 10px;
+	border-radius: 20px; 
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px; 
+	-o-border-radius: 20px; 
+	-ms-border-radius: 20px; 
+	background: #00D921;
+	align-self: flex-end;
+	color: white;
+	font-size: 14px; 
+	font-family: GothamBook;
+}
+
+.otro{
+	margin: 1px 10px; 
+	padding: 10px;
+	border-radius: 20px; 
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px; 
+	-o-border-radius: 20px; 
+	-ms-border-radius: 20px; 
+	background: lightgray;
+	align-self: flex-start;
+	background: #f1f0f0;
+	color: black;
+	font-size: 14px; 
+	font-family: GothamBook;
+}
+
+/*FOOTER FLOTANTE DERECHO*/
+#enviarMensaje{
+	height: 60px;
+	max-height: 60px;
+	width: 100%;
+	background: white; 
+	border-top: 1px solid lightgray;	
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#enviarMensaje input{
+	width: 100%;
+	height: 100%; 
+	padding: 0 10px;
+	border: none;
+	outline: none;
+	font-size: 14px; 
+	font-family: GothamBook;
+}
+
+#enviarMensaje input::placeholder{
+	color: lightgray;
+}
+
+#enviarMensaje input::-webkit-placeholder{
+	color: lightgray;
+}
+
+#enviarMensaje input::-moz-placeholder{
+	color: lightgray;
+}
+
+#enviarMensaje input::-ms-placeholder{
+	color: lightgray;
+}
+
+/*NOTIFICACIÓN CONECTAR O RECHAZAR*/
+#labelConectar{
+	font-family: GothamBook; 
+	font-size: 16px; 
+	text-align: center; 
+	color: #414141;
+	margin: 30px 15px;
+}
+
+#englobaBotonera{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#aceptar{
+	cursor: pointer;
+	margin: 0;
+	margin-top: 10px;
+	margin-right: 35px;
+	font-size: 16px; 
+	font-family: GothamMedium;
+	color: white;
+	background: #00D921;
+	padding: 7px 15px;
+	border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	-ms-border-radius: 3px; 
+}
+
+#rechazar{
+	cursor: pointer;
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 35px;
+	font-size: 16px; 
+	font-family: GothamMedium;
+	color: #95989A;
+	padding: 6px 10px;
+	border: 1px solid #95989A;
+	border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	-ms-border-radius: 3px; 
+}
+
+#cancelar{
+	cursor: pointer;
+	margin: 0;
+	margin-top: 10px;
+	font-size: 16px; 
+	font-family: GothamMedium;
+	color: #95989A;
+	padding: 6px 10px;
+	border: 1px solid #95989A;
+	border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	-ms-border-radius: 3px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

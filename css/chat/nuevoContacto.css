@@ -1,0 +1,252 @@
+/*Responsivo para teléfonos*/
+@media only screen and (max-width: 530px){
+	#buscarContacto{
+		width: 100%;
+		height: 100%;
+	}
+
+	#regresarNuevoContacto{
+		display: block;
+	}
+
+	#blancoNuevoContacto{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 531px){
+	#buscarContacto{
+		width: 440px; 
+		max-height: 275px; 
+		border-radius: 3px; 
+		-webkit-border-radius: 3px; 
+		-moz-border-radius: 3px; 
+		-o-border-radius: 3px; 
+		-ms-border-radius: 3px; 
+	}
+
+	#regresarNuevoContacto{
+		display: none;
+	}
+
+	#blancoNuevoContacto{
+		display: none;
+	}
+
+}
+
+#pantallaCompleta{
+	width: 100%; 
+	height: 100%;
+	background: rgba(0,0,0,.8);	
+	position: fixed;
+	z-index: 100;
+	display: flex; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+}
+
+#buscarContacto{
+	background: white; 
+	display: flex;
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#encabezadoTitulo{
+	height: 60px;
+	display: flex; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-shrink: 0;
+	padding: 0 15px;
+}
+
+#tituloVentanaNuevoContacto{
+	font-family: GothamMedium; 
+	font-size: 16px; 
+	color: black;
+	text-align: center;
+	flex-grow: 1; 
+	flex-basis: 0;
+}
+
+#regresarNuevoContacto{
+	cursor: pointer;
+	width: 35px;
+    height: 35px;
+    margin: 0;
+}
+
+#regresarNuevoContacto img{
+	width: 100%; 
+	height: 100%; 
+}
+
+#blancoNuevoContacto{
+	width: 35px;
+    height: 35px;
+    margin: 0;
+}
+
+#buscadorConCoincidencias{
+	margin: 15px;
+	display: flex; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	flex-direction: row;
+	align-items: center; 
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+#inputBuscador{
+	display: block;
+	flex-grow: 1;
+	border: none;
+	font-family: GothamBook;
+	font-size: 16px;
+	border-bottom: 1px solid #00D921;
+	outline: none; 
+	color: #00D921;
+}
+
+#totalCoincidencias{
+	flex-grow: 1; 
+}
+
+#coincidencias{
+	margin: 0;
+	margin-left: 15px;
+	border: none;
+	font-family: GothamBook;
+	font-size: 14px;
+	outline: none; 
+	color: #838383;
+}
+
+
+#inputBuscador::placeholder{
+	color: #00D921;
+	opacity: .5;
+}
+
+#inputBuscador::-webkit-placeholder{
+	color: #00D921;
+	opacity: .5;
+}
+
+#inputBuscador::-moz-placeholder{
+	color: #00D921;
+	opacity: .5;
+}
+
+#inputBuscador::-ms-placeholder{
+	color: #00D921;
+	opacity: .5;
+}
+
+/*Coincidencias*/
+#totalCoincidencias{
+	overflow-y: scroll;
+}
+
+.coincidencia{
+	display: flex; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	flex-direction: row;
+	align-items: center; 
+	justify-content: space-between;
+}
+
+.fotoCoincidencia{
+	margin: 10px 15px;
+}
+
+.fotoCoincidencia img{
+	width: 50px; 
+	height: 50px;
+	vertical-align: top;
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px; 
+}
+
+.informacionCoincidencia{
+	display: flex; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.nombreCoincidencia{
+	font-family: GothamBook; 
+	font-size: 15px; 
+	color: #414141;
+	margin: 0;
+}
+
+.emailCoincidencia{
+	font-family: GothamLight; 
+	font-size: 15px; 
+	color: #838383;
+	margin: 0;
+}
+
+.conectar{
+	cursor: pointer;
+	font-family: GothamBook; 
+	font-size: 16px; 
+	color: white;
+	background: #00D921;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin: 0;
+	padding: 6px 10px;
+	margin-right: 15px;
+}
+
+.solicitado{
+	background: gray !important;
+}
+
+.esContacto{
+	background: darkgray !important;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'Instagram';
+  src: url('../../objetos/fuentes/instagram.ttf');
+}
+
+@font-face {
+  font-family: 'GothamLight';
+  src: url('../../objetos/fuentes/Proxima Nova Light.otf');
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('../../objetos/fuentes/Proxima Nova Regular.otf');
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('../../objetos/fuentes/Proxima Nova Semibold.otf');
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url('../../objetos/fuentes/Proxima Nova Bold.otf');
+}
+
+
+

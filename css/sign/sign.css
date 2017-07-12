@@ -1,0 +1,152 @@
+#yack{
+	width: 100px; 
+	position: fixed;
+	bottom: -20px;
+}
+
+#yack img{
+	width: 100%; 
+}
+
+@media only screen and (max-width: 480px) {
+	#yack{
+		display: none;
+	}
+}
+
+#centrado{
+	position: relative;
+	top: 50vh;
+}
+
+#centrado input{
+	display: block;
+	padding: 15px 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	outline: none;
+	border: none;
+	width: 285px;
+}
+
+#subirFoto{
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 85px;
+	height: 85px; 
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px;
+	background: white;
+	border: 1px solid #00D921; 
+	display: flex; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+}
+
+.camara{
+	width: 40px; 
+	height: 40px;
+}
+
+.fotoSubidaInput{
+	object-fit: cover;
+	object-position: center;
+	vertical-align: top; 
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px;
+	width: 100%; 
+	height: 100%;
+}
+
+#subirFoto input{
+	cursor: pointer;
+	padding: 0;
+	position: absolute;
+	top: -25px;
+	width: 85px; 
+	height: 110px;
+	opacity: 0;
+	background: pink;
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px;
+
+}
+
+#subirFoto input label{
+	cursor: pointer;
+}
+
+
+#email, #password, #nombre{
+	border-bottom: 1px solid #00D921 !important;
+	margin-bottom: 15px !important;
+	color: #00D921;
+	font-family: GothamBook;
+	font-size: 16px;
+}
+
+#sign{
+	background: #00D921;
+	color: white;
+	border-radius: 5px;
+	font-family: GothamBold;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#anotacion{
+	font-family: GothamBook;
+	font-size: 15px; 
+	color: #838383;
+	text-align: center;
+}
+
+#anotacion span{
+	font-family: GothamMedium;
+	text-decoration: underline;
+	color: #000;
+	cursor: pointer;
+}
+
+.error{
+	border-bottom: 1px solid red !important;
+}
+
+
+/*Placeholder*/
+::placeholder{
+	color: #00D921;
+	opacity: .5;
+}
+
+::-webkit-placeholder{
+	color: #00D921;
+	opacity: .5;
+}
+
+::-ms-placeholder{
+	color: #00D921;
+	opacity: .5;
+}
+
+::-moz-placeholder{
+	color: #00D921;
+	opacity: .5;
+}

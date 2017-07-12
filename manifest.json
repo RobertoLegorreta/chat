@@ -1,0 +1,10 @@
+{
+  "name": "Yack.io",
+  "short_name": "Yack.io",
+  "theme_color": "#00d921",
+  "background_color": "#00d921",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}
